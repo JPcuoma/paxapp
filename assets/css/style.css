@@ -1,0 +1,743 @@
+h1, h2 {
+  all: unset;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1280px;
+  }
+}
+a.btn-yellow {
+  font-size: 20px;
+  color: #9F72FF;
+  background-color: #FFEF61;
+  padding: 22px 32px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 65px auto 0;
+}
+a.btn-yellow:hover {
+  color: #9F72FF;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  a.btn-yellow {
+    padding: 14px 32px;
+  }
+}
+
+a.btn-violet {
+  font-size: 20px;
+  color: #FFEF61;
+  background-color: #9F72FF;
+  width: 310px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 65px auto 0;
+}
+a.btn-violet:hover {
+  color: #9F72FF;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  a.btn-violet {
+    padding: 14px 32px;
+  }
+}
+
+.secBtn {
+  border: 2px solid #FFEB00;
+  color: #FFEB00;
+  background-color: inherit;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mainBtn {
+  color: #FFEF61;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 13px 28px;
+  background: #9F72FF;
+  border-radius: 6px;
+}
+@media (max-width: 1199px) {
+  .mainBtn.desktop {
+    display: none;
+  }
+}
+
+#paxApp .navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+@media (min-width: 1200px) {
+  #paxApp .navbar .navbar-collapse {
+    flex-grow: initial;
+    justify-content: space-between;
+  }
+}
+#paxApp .navbar .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  #paxApp .navbar .container .navbar-toggler {
+    border: none;
+  }
+}
+#paxApp .navbar .container .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}
+#paxApp .navbar .container .navbar-toggler:focus {
+  outline: none;
+}
+@media (max-width: 1199px) {
+  #paxApp .navbar .container .navbar-nav .nav-item {
+    text-align: right;
+    display: inline-block !important;
+  }
+  #paxApp .navbar .container .navbar-nav .nav-item a {
+    margin-top: 20px;
+    display: inline-block !important;
+  }
+}
+#paxApp .navbar .container .navbar-nav .nav-item .nav-link {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000 !important;
+  padding: 0 20px;
+}
+@media (max-width: 1199px) {
+  #paxApp .navbar .container .navbar-nav .nav-item .nav-link {
+    text-align: right;
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 1199px) {
+  #paxApp .navbar .container > a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 114px;
+    top: 0;
+  }
+}
+@media (max-width: 1199px) {
+  #paxApp .navbar .container {
+    padding: 0 20px;
+  }
+}
+
+#paxApp {
+  font-family: "Montserrat";
+}
+#paxApp main .mainBanner {
+  height: 599px;
+  background: url(../img/main-banner-desktop.jpg) no-repeat;
+  background-size: cover;
+}
+#paxApp main .mainBanner h1 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 102px;
+  text-align: center;
+  max-width: 905px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  #paxApp main .mainBanner h1 {
+    font-size: 10px;
+  }
+}
+#paxApp main .mainBanner h2 {
+  color: #fff;
+  font-size: 25px;
+  padding-top: 45px;
+  text-align: center;
+  max-width: 905px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-weight: 300;
+  line-height: 32px;
+}
+#paxApp main .mainBanner .btn-container {
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #paxApp main .mainBanner {
+    background: url("../img/main-banner-mobile.jpg") no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
+  #paxApp main .mainBanner .btn-container {
+    display: none;
+  }
+  #paxApp main .mainBanner h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  #paxApp main .mainBanner h2 {
+    display: none;
+  }
+}
+#paxApp main .nfc {
+  background-color: #FFEF61;
+}
+#paxApp main .nfc .container-extended {
+  padding: 81px 0 159px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+#paxApp main .nfc .container-extended h3 {
+  max-width: 582px;
+  color: #333;
+  font-size: 30px;
+}
+#paxApp main .nfc .container-extended img.mobile {
+  display: none;
+}
+#paxApp main .nfc .container-extended .btn-container {
+  display: none;
+}
+@media (max-width: 1321px) {
+  #paxApp main .nfc .container-extended {
+    padding: 81px 0 159px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  #paxApp main .nfc .container-extended h3 {
+    max-width: 582px;
+    color: #333;
+    font-size: 17px;
+    text-align: center;
+    order: 1;
+  }
+  #paxApp main .nfc .container-extended .nfc-logo {
+    order: 2;
+  }
+}
+@media (max-width: 650px) {
+  #paxApp main .nfc .container-extended {
+    position: relative;
+    height: 410px;
+    padding: 0px;
+    justify-content: inherit;
+  }
+  #paxApp main .nfc .container-extended .nfc-logo {
+    margin-top: 15px;
+  }
+  #paxApp main .nfc .container-extended img.desktop {
+    display: none;
+  }
+  #paxApp main .nfc .container-extended img.mobile {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: -60px;
+  }
+  #paxApp main .nfc .container-extended h3 {
+    margin-top: 125px;
+    font-size: 17px;
+    padding: 0 23px;
+  }
+  #paxApp main .nfc .container-extended .btn-container {
+    display: block;
+    order: 3;
+  }
+}
+#paxApp main .home-details {
+  margin-top: -80px;
+}
+#paxApp main .home-details .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+}
+#paxApp main .home-details .container .box {
+  background-color: #F2F2F2;
+  max-width: 407px;
+  height: 460px;
+  padding: 72px 38px 0;
+}
+@media (max-width: 768px) {
+  #paxApp main .home-details .container .box {
+    background-color: white !important;
+    height: auto !important;
+    padding: 0 20px !important;
+    position: relative;
+  }
+  #paxApp main .home-details .container .box::after {
+    height: 3px;
+    width: 90%;
+    background: #eee;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    content: "";
+    bottom: 0;
+  }
+}
+#paxApp main .home-details .container .box h3 {
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  #paxApp main .home-details .container .box h3 {
+    padding: 22px 0;
+    margin: 0px;
+  }
+}
+#paxApp main .home-details .container .box h3 span {
+  display: none;
+}
+@media (max-width: 768px) {
+  #paxApp main .home-details .container .box h3 span {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
+}
+#paxApp main .home-details .container .box h3.active span svg {
+  transform: rotate(180deg);
+}
+#paxApp main .home-details .container .box p.active {
+  display: block;
+}
+@media (max-width: 768px) {
+  #paxApp main .home-details .container .box p {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    color: #5C4E47;
+    padding-bottom: 34px;
+  }
+}
+@media (max-width: 998px) {
+  #paxApp main .home-details .container {
+    flex-direction: column;
+  }
+  #paxApp main .home-details .container .box {
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 460px;
+    padding: 35px 14px;
+  }
+  #paxApp main .home-details .container .box h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #484D66;
+    font-weight: 700;
+  }
+  #paxApp main .home-details .container .box p {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #paxApp main .home-details {
+    margin-top: 0px;
+  }
+  #paxApp main .home-details .container .box {
+    max-width: inherit !important;
+  }
+}
+#paxApp main .slides-info {
+  margin-top: 100px;
+}
+#paxApp main .slides-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F2F2F2;
+  padding: 0px;
+  padding-left: 49px;
+}
+#paxApp main .slides-info .container h3 {
+  color: #1A1A1A;
+  font-size: 46px;
+  line-height: 71px;
+  font-weight: 700;
+}
+#paxApp main .slides-info .container p {
+  max-width: 544px;
+  font-size: 21px;
+  color: #1A1A1A;
+  line-height: 32px;
+}
+#paxApp main .slides-info .container img.mobile {
+  display: none;
+}
+#paxApp main .slides-info .container img.desktop {
+  display: block;
+}
+#paxApp main .slides-info.right .container {
+  padding-left: 0px;
+  padding-right: 49px;
+}
+@media (max-width: 1255px) {
+  #paxApp main .slides-info .container .left {
+    padding-right: 20px;
+  }
+  #paxApp main .slides-info .container .right {
+    padding-left: 20px;
+  }
+  #paxApp main .slides-info .container img {
+    max-width: 50%;
+  }
+  #paxApp main .slides-info.right .container {
+    padding-left: 0px;
+    padding-right: 49px;
+  }
+}
+@media (max-width: 998px) {
+  #paxApp main .slides-info {
+    margin-top: 45px;
+  }
+  #paxApp main .slides-info .container {
+    background: linear-gradient(0deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
+    flex-direction: column;
+    padding-right: 0px !important;
+    padding: 0px;
+  }
+  #paxApp main .slides-info .container .left {
+    padding-right: 0px;
+  }
+  #paxApp main .slides-info .container .right {
+    padding-left: 0px;
+  }
+  #paxApp main .slides-info .container img {
+    max-width: 50%;
+  }
+  #paxApp main .slides-info .container img.mobile {
+    display: block;
+  }
+  #paxApp main .slides-info .container img.desktop {
+    display: none;
+  }
+  #paxApp main .slides-info .container h3 {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+  }
+  #paxApp main .slides-info .container p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #paxApp main .slides-info.right .container {
+    padding-left: 0px;
+    padding-right: 49px;
+  }
+}
+@media (max-width: 768px) {
+  #paxApp main .slides-info #paxApp main .slides-info .container img {
+    max-width: auto;
+  }
+}
+#paxApp main .propuesta {
+  background: url("../img/propuesta-img.jpg") no-repeat;
+  background-size: cover;
+  height: 650px;
+  margin-top: 142px;
+}
+#paxApp main .propuesta .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#paxApp main .propuesta .container img {
+  margin-top: 50px;
+}
+#paxApp main .propuesta .container img.dispositivo {
+  position: absolute;
+  left: 160px;
+  right: 0;
+  text-align: center;
+  bottom: -32px;
+}
+#paxApp main .propuesta .container img.mobile {
+  display: none;
+}
+#paxApp main .propuesta .container .propuesta-txt h3 {
+  font-size: 46px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 480px;
+  margin-top: 105px;
+}
+#paxApp main .propuesta .container .propuesta-txt p {
+  font-size: 21px;
+  color: #fff;
+  max-width: 630px;
+  font-weight: 200;
+}
+@media (max-width: 992px) {
+  #paxApp main .propuesta .container .propuesta-txt h3 {
+    font-size: 28px;
+  }
+  #paxApp main .propuesta .container .propuesta-txt p {
+    font-size: 18px;
+  }
+  #paxApp main .propuesta .container img.dispositivo {
+    left: 0px;
+    right: 0;
+  }
+}
+@media (max-width: 770px) {
+  #paxApp main .propuesta {
+    height: auto;
+    margin-top: 0px;
+    background: url("../img/propuesta-bg-mobile.jpg");
+    background-size: cover;
+  }
+  #paxApp main .propuesta .container {
+    flex-direction: column;
+  }
+  #paxApp main .propuesta .container .propuesta-txt h3 {
+    font-size: 28px;
+    text-align: center;
+    margin: 41px auto;
+  }
+  #paxApp main .propuesta .container .propuesta-txt p {
+    font-size: 18px;
+    text-align: center;
+  }
+  #paxApp main .propuesta .container img.dispositivo {
+    left: 0px;
+    right: 0;
+  }
+  #paxApp main .propuesta .container .desktop {
+    display: none;
+  }
+  #paxApp main .propuesta .container .mobile {
+    display: block !important;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #paxApp main .propuesta .container .pulsera-mobile {
+    position: absolute;
+    bottom: -110px;
+    left: 0px;
+  }
+}
+#paxApp main .info {
+  background: #9F72FF;
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#paxApp main .info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#paxApp main .info .container h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+#paxApp main .info .container .btn-yellow {
+  margin: 0px;
+}
+@media (max-width: 991px) {
+  #paxApp main .info {
+    height: auto;
+    padding: 107px 0 49px 0;
+  }
+  #paxApp main .info .container {
+    flex-direction: column;
+  }
+  #paxApp main .info .container h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 49px;
+  }
+  #paxApp main .info .container .btn-yellow {
+    margin: 0px;
+    width: 320px;
+  }
+}
+#paxApp main .contact {
+  color: #FFF;
+  background-color: #484D66;
+  height: auto;
+  padding: 85px 0 50px;
+}
+#paxApp main .contact h4 {
+  font-size: 50px;
+}
+#paxApp main .contact h5 {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+#paxApp main .contact .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#paxApp main .contact .flex form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 540px;
+  max-width: 100%;
+}
+#paxApp main .contact .flex form label {
+  margin-top: 22px;
+}
+#paxApp main .contact .flex form input[type=text] {
+  width: 325px;
+  height: 52px;
+  border: 2px solid #FFF;
+  border-radius: 6px;
+  padding: 14px;
+  color: #1A1A1A;
+}
+#paxApp main .contact .flex form textarea {
+  height: 160px;
+  min-height: 100px;
+  max-height: 260px;
+  width: 100%;
+  border: 2px solid #FFF;
+  border-radius: 6px;
+  padding: 14px;
+  color: #1A1A1A;
+}
+#paxApp main .contact .flex form .secBtn {
+  width: 248px;
+  height: 58px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 38px;
+}
+#paxApp main .contact .flex .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+#paxApp main .contact .flex .block .property {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+#paxApp main .contact .flex .block .property img {
+  margin: 20px 11px;
+}
+#paxApp main .contact .flex .block .property div:first-child {
+  min-width: 60px;
+  text-align: center;
+}
+#paxApp main .contact .flex .block .property p {
+  margin-bottom: 0px;
+}
+#paxApp main .contact .flex .block .property.adress {
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  #paxApp main .contact {
+    padding: 44px 0;
+  }
+  #paxApp main .contact .flex {
+    flex-direction: column;
+  }
+  #paxApp main .contact h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #paxApp main .contact h5 {
+    font-size: 16px;
+    margin-top: 29px;
+    text-align: center;
+  }
+  #paxApp main .contact .block {
+    margin-top: 40px;
+    margin-bottom: 0 !important;
+  }
+  #paxApp main .contact .block p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  #paxApp main .contact form input {
+    width: 100% !important;
+  }
+  #paxApp main .contact form button {
+    width: 100% !important;
+  }
+}
+#paxApp footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 134px;
+}
+@media (max-width: 768px) {
+  #paxApp footer {
+    height: auto;
+    padding: 30px 0;
+    flex-direction: column;
+  }
+  #paxApp footer p {
+    text-align: center;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

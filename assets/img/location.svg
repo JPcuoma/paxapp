@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="40px" viewBox="0 0 28 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer_desktop" transform="translate(-855.000000, -419.000000)" fill="#FFEB00" fill-rule="nonzero">
+            <path d="M869,419 C861.27,419 855,425.27 855,433 C855,443.5 869,459 869,459 C869,459 883,443.5 883,433 C883,425.27 876.73,419 869,419 Z M869,438 C866.24,438 864,435.76 864,433 C864,430.24 866.24,428 869,428 C871.76,428 874,430.24 874,433 C874,435.76 871.76,438 869,438 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
