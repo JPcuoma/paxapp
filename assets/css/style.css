@@ -18,6 +18,7 @@ a.btn-yellow {
   border-radius: 6px;
   font-weight: 600;
   margin: 65px auto 0;
+  text-align: center;
 }
 a.btn-yellow:hover {
   color: #9F72FF;
@@ -25,7 +26,8 @@ a.btn-yellow:hover {
 }
 @media (max-width: 768px) {
   a.btn-yellow {
-    padding: 14px 32px;
+    padding: 10px 32px;
+    height: auto;
   }
 }
 
@@ -48,7 +50,9 @@ a.btn-violet:hover {
 }
 @media (max-width: 768px) {
   a.btn-violet {
-    padding: 14px 32px;
+    padding: 10px 32px;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -90,6 +94,11 @@ a.btn-violet:hover {
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
+}
+@media (max-width: 768px) {
+  #paxApp .navbar {
+    padding: 15px 0;
+  }
 }
 @media (min-width: 1200px) {
   #paxApp .navbar .navbar-collapse {
@@ -206,6 +215,7 @@ a.btn-violet:hover {
   #paxApp main .mainBanner h1 {
     font-size: 28px;
     line-height: 34px;
+    padding: 30px 20px;
   }
   #paxApp main .mainBanner h2 {
     display: none;
@@ -233,6 +243,11 @@ a.btn-violet:hover {
 #paxApp main .nfc .container-extended .btn-container {
   display: none;
 }
+@media (max-width: 768px) {
+  #paxApp main .nfc .container-extended .btn-container a {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 1321px) {
   #paxApp main .nfc .container-extended {
     padding: 81px 0 159px 0;
@@ -257,7 +272,6 @@ a.btn-violet:hover {
 @media (max-width: 650px) {
   #paxApp main .nfc .container-extended {
     position: relative;
-    height: 410px;
     padding: 0px;
     justify-content: inherit;
   }
@@ -281,6 +295,7 @@ a.btn-violet:hover {
   #paxApp main .nfc .container-extended .btn-container {
     display: block;
     order: 3;
+    margin-bottom: 49px;
   }
 }
 #paxApp main .home-details {
@@ -338,8 +353,11 @@ a.btn-violet:hover {
     top: 20px;
   }
 }
-#paxApp main .home-details .container .box h3.active span svg {
+#paxApp main .home-details .container .box h3 span svg {
   transform: rotate(180deg);
+}
+#paxApp main .home-details .container .box h3.active span svg {
+  transform: rotate(360deg);
 }
 #paxApp main .home-details .container .box p.active {
   display: block;
@@ -406,6 +424,11 @@ a.btn-violet:hover {
 }
 #paxApp main .slides-info .container img.mobile {
   display: none;
+}
+@media (max-width: 768px) {
+  #paxApp main .slides-info .container img.mobile {
+    max-width: inherit;
+  }
 }
 #paxApp main .slides-info .container img.desktop {
   display: block;
@@ -538,7 +561,7 @@ a.btn-violet:hover {
   #paxApp main .propuesta .container .propuesta-txt h3 {
     font-size: 28px;
     text-align: center;
-    margin: 41px auto;
+    margin: 41px auto 28px;
   }
   #paxApp main .propuesta .container .propuesta-txt p {
     font-size: 18px;
