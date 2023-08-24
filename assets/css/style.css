@@ -2,6 +2,10 @@ h1, h2 {
   all: unset;
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1280px;
@@ -535,6 +539,10 @@ a.btn-violet:hover {
   color: #fff;
   max-width: 630px;
   font-weight: 200;
+  margin-bottom: 20px;
+}
+#paxApp main .propuesta .container .propuesta-txt p b {
+  font-weight: 600;
 }
 @media (max-width: 992px) {
   #paxApp main .propuesta .container .propuesta-txt h3 {
