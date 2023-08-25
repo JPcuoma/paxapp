@@ -799,3 +799,27 @@ padding: 32px 0;
     }
 
 }
+
+
+
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+ 
+  .reveal{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: .5s all ease;
+  }
+  .reveal.right{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: .5s all ease;
+  }
+  .reveal.right.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
