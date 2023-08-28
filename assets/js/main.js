@@ -13,13 +13,12 @@ function show() {
     for (var i = 1; i < reveal.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveal[i].getBoundingClientRect().top;
-      var e = 500;
+      var e = 200;
   
       if (elementTop < windowHeight-e) {
-        reveal[i].classList.add("active");}
-      else {
-        reveal[i].classList.remove("active");
-      }
+        reveal[i].classList.add("active");
+        }
+     
     }
   }
   

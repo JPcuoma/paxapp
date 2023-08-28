@@ -437,6 +437,29 @@ a.btn-violet:hover {
 #paxApp main .slides-info .container img.desktop {
   display: block;
 }
+#paxApp main .slides-info .container .images {
+  width: 641px;
+  height: 551px;
+  position: relative;
+}
+#paxApp main .slides-info .container .images.one img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 7s all ease;
+}
+#paxApp main .slides-info .container .images.one img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 173px;
+  transition: 2s all ease;
+}
+#paxApp main .slides-info .container .images.one img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 355px;
+  transition: 0.5s all ease;
+}
 #paxApp main .slides-info.right .container {
   padding-left: 0px;
   padding-right: 49px;
@@ -782,17 +805,28 @@ a.btn-violet:hover {
   position: relative;
   transform: translateX(-150px);
   opacity: 0;
-  transition: 0.5s all ease;
+  transition: 0.8s all ease;
 }
 
 .reveal.right {
   position: relative;
   transform: translateX(150px);
   opacity: 0;
-  transition: 0.5s all ease;
+  transition: 0.8s all ease;
 }
 
 .reveal.right.active {
   transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal.desktop {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 0;
+}
+
+.reveal.desktop.active {
+  transform: translateY(0);
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */
