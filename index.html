@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:300,400,600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-
+    <meta name="author" content="PAX APP" />
+    <meta name="description" content="La forma mas inteligente de gestionar viajes" />
+    <meta name="keywords" content="[software, viajes, gestión, gestionar, turismo, aplicación, empresa, plataforma, estudiantil, mejoras, rendimiento, comercial, diagramas]">
+    <meta name="Copyright" content="PAX APP" />
+    <title>PAX APP | Nuevo Software Integral para Turismo</title>
 
 </head>
 <body id="paxApp">
@@ -26,34 +30,34 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item ">
-                        <a class="nav-item nav-link" href="#" title="Viajes">Viajes</a>
+                        <a class="nav-item nav-link" href="#viajes" title="Viajes">Viajes</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-item nav-link" href="#" title="asignar pulseras">Asignar pulseras</a>
+                        <a class="nav-item nav-link" href="#pulseras" title="asignar pulseras">Asignar pulseras</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-item nav-link" href="#" title="Contar pax">Contar Pax</a>
+                        <a class="nav-item nav-link" href="#contar-pax" title="Contar pax">Contar Pax</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-item nav-link" href="#" title="Listado de pax">Listado de pax</a>
+                        <a class="nav-item nav-link" href="#listado-pax" title="Listado de pax">Listado de pax</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-item nav-link" href="#" title="Ficha médica">Ficha médica</a>
+                        <a class="nav-item nav-link" href="#ficha-medica" title="Ficha médica">Ficha médica</a>
                     </li>
 
                    
                     <li class="nav-item" style="display:none">
-                        <a class="mainBtn" href="/site/contacto/">Contacto</a>
+                        <a class="mainBtn" href="#contacto">Contacto</a>
                     </li>
                 </ul>
                 
             </div>
             <div class="btn-group">
-                <a class="mainBtn desktop" href="/site/contacto/">Contacto</a>
+                <a class="mainBtn desktop" href="#contacto">Contacto</a>
             </div>
         </div>
     </nav>
@@ -64,7 +68,7 @@
                 <h1>La revolución en gestión de viajes de turismo estudiantil</h1>
                 <h2>Pax App es la primera aplicación para coordinadores que simplifica  y potencia la gestión del receptivo en destino.
                 </h2>
-                <div class="btn-container"><a href="#" class="btn-yellow">Quiero que me llamen</a></div>
+                <div class="btn-container"><a href="#contacto" class="btn-yellow">Quiero saber más</a></div>
 
                 
             </div>
@@ -77,10 +81,10 @@
                 <h3>Pax App permite identificar a los pasajeros en todo momento del viaje
                     utilizando <b>pulseras con chip de NFC.</b>
                     </h3>
-                    <div class="btn-container"><a href="#" class="btn-violet">Quiero que me llamen</a></div>
+                    <div class="btn-container"><a href="#contacto" class="btn-violet">Quiero saber más</a></div>
             </div>
         </section>
-        <section class="home-details reveal active">
+        <section class="home-details">
             <div class="container">
 
                 <div class="box">
@@ -95,7 +99,7 @@
                         </svg></span></h3>
                     <p>Ya no es necesario contar pasajeros al ingresar a una disco o al predio de una excursión porque a cada uno se le coloca una pulsera con un chip con tecnología de lectura por proximidad (NFC), la que usan las tarjetas de crédito contact less, identificando a los integrantes del grupo para saber quién asiste y quién no, al servicio.</p>
                 </div>
-                <div class="box">
+                <div class="box" >
                     <h3>TIEMPO REAL <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.125 9.875L8 3.75L1.875 9.875L1.63918e-07 8L8 -6.99382e-07L16 8L14.125 9.875Z" fill="#9F72FF"/>
                         </svg></span></h3>
@@ -105,9 +109,9 @@
             </div>
         </section>
 
-        <section class="slides-info ">
+        <section class="slides-info" id="viajes">
             <div class="container">
-                <div class="left reveal">
+                <div class="left ">
                     <h3>VIAJES</h3>
                     <p>El coordinador accede únicamente a la información de su propio viaje y visualiza un detalle con el destino, el hotel, la fecha de salida y de regreso, los colegios que forman el grupo y otros datos relevantes para el momento de la salida.</p>
                 </div>
@@ -116,15 +120,20 @@
                     <img src="./assets/img/viajes-desktop-2.png" alt="viajes" class="desktop reveal">
                     <img src="./assets/img/viajes-desktop-3.png" alt="viajes" class="desktop reveal">
                 </div>
-                
+                <!-- <img src="./assets/img/viajes-desktop.png" alt="viajes" class="desktop"> -->
                 <img src="./assets/img/viajes-mobile.png" alt="viajes" class="mobile">
             </div>
         </section>
 
-        <section class="slides-info right ">
+        <section class="slides-info right" id="pulseras">
             <div class="container">
-                <img src="./assets/img/pulseras-desktop.png" alt="pulseras" class="desktop reveal">
-                <div class="right reveal">
+                <div class="images two">
+                    <img src="./assets/img/asignar-desktop-1.png" alt="viajes" class="desktop reveal">
+                    <img src="./assets/img/asignar-desktop-2.png" alt="viajes" class="desktop reveal">
+                    <img src="./assets/img/asignar-desktop-3.png" alt="viajes" class="desktop reveal">
+                </div>
+                <!-- <img src="./assets/img/pulseras-desktop.png" alt="pulseras" class="desktop "> -->
+                <div class="right ">
                     <h3>ASIGNAR PULSERAS</h3>
                     <p>Al momento de comenzar el viaje, el coordinador coloca y ajusta una pulsera a cada pasajero. Luego la escanea y se la asigna al pasajero en el listado. A partir de ahora cada vez que escanee una pulsera se identifica al pasajero.</p>
                 </div>
@@ -132,21 +141,29 @@
             </div>
         </section>
 
-        <section class="slides-info ">
+        <section class="slides-info" id="contar-pax">
             <div class="container">
-                <div class="left reveal">
+                <div class="left ">
                     <h3>CONTAR PAX</h3>
                     <p>Escaneando las pulseras podemos contabilizar e identificar a todos los pasajeros del grupo en cualquier momento. Esta funcionalidad es ideal para saber quiénes faltan al momento de realizar controles de acceso y consumo de servicios o prestaciones. Los conteos quedan guardados para consultas futuras.</p>
                 </div>
-                <img src="./assets/img/contar-pax-desktop.png" alt="contar pax" class="desktop reveal">
+                <div class="images three">
+                    <img src="./assets/img/contar-desktop-1.png" alt="viajes" class="desktop reveal">
+                    <img src="./assets/img/contar-desktop-2.png" alt="viajes" class="desktop reveal">
+                </div>
+                <!-- <img src="./assets/img/contar-pax-desktop.png" alt="contar pax" class="desktop "> -->
                 <img src="./assets/img/contar-pax-mobile.png" alt="contar pax" class="mobile">
             </div>
         </section>
 
-        <section class="slides-info right ">
+        <section class="slides-info right " id="listado-pax">
             <div class="container">
-                <img src="./assets/img/listado-pax-desktop.png" alt="listado pax" class="desktop reveal">
-                <div class="right reveal">
+                <!-- <img src="./assets/img/listado-pax-desktop.png" alt="listado pax" class="desktop "> -->
+                <div class="images four">
+                    <img src="./assets/img/listado-desktop-1.png" alt="listado pax" class="desktop reveal">
+                    <img src="./assets/img/listado-desktop-2.png" alt="listado pax" class="desktop reveal">
+                </div>
+                <div class="right ">
                     <h3>LISTADO DE PAX</h3>
                     <p>Listado de pasajeros agrupados por contrato con visualización de cantidades parciales y total del grupo.
 Detalle de información de cada pax: N° de pasajero, ID de la pulsera, datos personales y de contacto.</p>
@@ -155,13 +172,17 @@ Detalle de información de cada pax: N° de pasajero, ID de la pulsera, datos pe
             </div>
         </section>
 
-        <section class="slides-info">
+        <section class="slides-info" id="ficha-medica">
             <div class="container">
-                <div class="left reveal">
+                <div class="left ">
                     <h3>FICHA MÉDICA</h3>
                     <p>Toda la información cargada por el propio pasajero se refleja en esta sección y será accesible sin conexión a internet una vez que el coordinador haya descargado la información del viaje.</p>
                 </div>
-                <img src="./assets/img/ficha-medica-desktop.png" alt="itinerario" class="desktop reveal">
+                <div class="images five">
+                    <img src="./assets/img/ficha-desktop-1.png" alt="ficha medica" class="desktop reveal">
+                    <img src="./assets/img/ficha-desktop-2.png" alt="ficha medica" class="desktop reveal">
+                </div>
+                <!-- <img src="./assets/img/ficha-medica-desktop.png" alt="itinerario" class="desktop "> -->
                 <img src="./assets/img/ficha-medica-mobile.png" alt="pasajeros" class="mobile">
             </div>
         </section>
@@ -187,14 +208,14 @@ Detalle de información de cada pax: N° de pasajero, ID de la pulsera, datos pe
         <section class="info">
             <div class="container">
                 <h3>Solicitá más información a nuestros representantes.</h3>
-                <a href="#" class="btn-yellow">Quiero que me llamen</a>
+                <a href="#contacto" class="btn-yellow">Quiero saber más</a>
             </div>
         </section>
 
 
-        <section class="contact" id="contactoEnviado">
+        <section class="contact" id="contacto">
             <div class="container">
-                <h4>¡O contactanos por acá!</h4>
+                <h4>¡Contactanos por acá!</h4>
                 <h5>Pax App es la aplicación ideal para que desarrolles profesionalmente la actividad turística.</h5>
                 <div class="flex">
                     <form action="https://forms.cuomatest.com/process.php" method="post" data-parsley-validate="" id="contactForm" novalidate="">
@@ -224,11 +245,13 @@ Detalle de información de cada pax: N° de pasajero, ID de la pulsera, datos pe
 
 
     <footer class="container home">
-        <a href=""><img src="assets/img/logo-pax-small.png" alt="PAX"></a>
-        <p>Pax App y Pax Manager son marcas registradas de CUOMA.com</p>
+        <div class="logos"><a href="https://www.paxmanager.com.ar/site/"><img src="assets/img/logo-pax-small.png" alt="PAX"></a> <img src="assets/img/paxApp-logo.png" alt="PAX app logo"></div>
+        <p>Pax App y Pax Manager son marcas registradas de <a href="https://www.cuoma.com/">CUOMA.com</a></p>
     </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="assets/js/parsley.min.js"></script>
+<script src="assets/js/parsleyES.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

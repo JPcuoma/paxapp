@@ -135,6 +135,10 @@ a.btn-violet:hover {
     margin-top: 20px;
     display: inline-block !important;
   }
+  #paxApp .navbar .container .navbar-nav .nav-item .mainBtn {
+    color: #FFEF61;
+    text-decoration: none;
+  }
 }
 #paxApp .navbar .container .navbar-nav .nav-item .nav-link {
   font-size: 21px;
@@ -147,6 +151,10 @@ a.btn-violet:hover {
     text-align: right;
     margin: 20px 0 0;
   }
+}
+#paxApp .navbar .container .btn-group a:hover {
+  color: #FFEF61;
+  text-decoration: none;
 }
 @media (max-width: 1199px) {
   #paxApp .navbar .container > a {
@@ -446,19 +454,77 @@ a.btn-violet:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: 7s all ease;
+  transition: 2s all ease;
 }
 #paxApp main .slides-info .container .images.one img:nth-child(2) {
   position: absolute;
   bottom: 0;
   left: 173px;
-  transition: 2s all ease;
+  transition: 1s all ease;
 }
 #paxApp main .slides-info .container .images.one img:nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 355px;
   transition: 0.5s all ease;
+}
+#paxApp main .slides-info .container .images.two img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s all ease;
+}
+#paxApp main .slides-info .container .images.two img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 173px;
+  transition: 1s all ease;
+  z-index: 1;
+}
+#paxApp main .slides-info .container .images.two img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 355px;
+  transition: 2s all ease;
+}
+#paxApp main .slides-info .container .images.three img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s all ease;
+}
+#paxApp main .slides-info .container .images.three img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  transition: 2s all ease;
+  z-index: 1;
+}
+#paxApp main .slides-info .container .images.four img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s all ease;
+}
+#paxApp main .slides-info .container .images.four img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  transition: 2s all ease;
+  z-index: 1;
+}
+#paxApp main .slides-info .container .images.five img:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s all ease;
+}
+#paxApp main .slides-info .container .images.five img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  transition: 2s all ease;
+  z-index: 1;
 }
 #paxApp main .slides-info.right .container {
   padding-left: 0px;
@@ -715,6 +781,12 @@ a.btn-violet:hover {
   font-weight: 600;
   margin-top: 38px;
 }
+#paxApp main .contact .flex form ul {
+  padding: 10px 0 0 20px;
+  position: static;
+  color: #FFEB00;
+  font-size: 14px;
+}
 #paxApp main .contact .flex .block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,6 +856,9 @@ a.btn-violet:hover {
   justify-content: space-between;
   height: 134px;
 }
+#paxApp footer a {
+  margin-right: 50px;
+}
 @media (max-width: 768px) {
   #paxApp footer {
     height: auto;
@@ -794,39 +869,64 @@ a.btn-violet:hover {
     text-align: center;
     margin-top: 30px;
   }
+  #paxApp footer a {
+    margin-right: 0px;
+  }
+  #paxApp footer .logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
 }
 
-.reveal.active {
-  transform: translateX(0);
-  opacity: 1;
+.thank-you {
+  background-color: #484D66;
+  height: auto;
+  padding: 85px 0 50px;
+  color: #fff;
+}
+.thank-you .container .flex {
+  max-width: 540px;
+}
+.thank-you .container .flex img {
+  margin-bottom: 45px;
+}
+.thank-you .container .flex h4 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.thank-you .container .flex p {
+  font-size: 24px;
+}
+.thank-you .container .flex .secBtn {
+  margin-top: 50px;
+  width: 248px;
+  height: 58px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.thank-you .container .flex .secBtn:hover {
+  color: #FFEF61;
+  text-decoration: none;
 }
 
 .reveal {
   position: relative;
-  transform: translateX(-150px);
+  transform: translate3d(0, 20%, 0);
   opacity: 0;
   transition: 0.8s all ease;
-}
-
-.reveal.right {
-  position: relative;
-  transform: translateX(150px);
-  opacity: 0;
-  transition: 0.8s all ease;
-}
-
-.reveal.right.active {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.reveal.desktop {
-  position: relative;
-  transform: translateY(0px);
-  opacity: 0;
 }
 
 .reveal.desktop.active {
-  transform: translateY(0);
+  transform: translateY(0px);
   opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#viajes, #pulseras, #contar-pax, #listado-pax, #ficha-medica {
+  scroll-margin-top: 120px;
 }/*# sourceMappingURL=style.css.map */
