@@ -421,6 +421,7 @@ a.btn-violet:hover {
   background: #F2F2F2;
   padding: 0px;
   padding-left: 49px;
+  overflow: hidden;
 }
 #paxApp main .slides-info .container h3 {
   color: #1A1A1A;
@@ -525,6 +526,11 @@ a.btn-violet:hover {
   left: 300px;
   transition: 2s all ease;
   z-index: 1;
+}
+@media (max-width: 998px) {
+  #paxApp main .slides-info .container .images {
+    height: auto;
+  }
 }
 #paxApp main .slides-info.right .container {
   padding-left: 0px;
@@ -911,6 +917,7 @@ a.btn-violet:hover {
   text-decoration: none;
 }
 
+/* ani */
 .reveal {
   position: relative;
   transform: translate3d(0, 20%, 0);
@@ -918,11 +925,41 @@ a.btn-violet:hover {
   transition: 0.8s all ease;
 }
 
+.reveal.left {
+  position: relative;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.right {
+  position: relative;
+  transform: translate3d(20%, 0, 0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
 .reveal.desktop.active {
   transform: translateY(0px);
   opacity: 1;
 }
 
+.reveal.left.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal.right.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media (max-width: 998px) {
+  .reveal.left, .reveal.right {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

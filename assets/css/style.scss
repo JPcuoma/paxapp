@@ -422,6 +422,7 @@ padding: 32px 0;
             background:$gray;
             padding: 0px;
             padding-left:49px;
+            overflow:hidden;
             h3{
                 color: #1A1A1A;
                 font-size: 46px;
@@ -538,6 +539,9 @@ padding: 32px 0;
                         transition: 2s all ease;
                         z-index: 1;
                     }
+                }
+                @media(max-width:998px){
+                    height:auto;
                 }
             }
         }
@@ -961,7 +965,7 @@ padding: 32px 0;
 
 
 
- 
+ /* ani */
   .reveal{
     position: relative;
     // transform: translateY(150px);
@@ -970,6 +974,21 @@ padding: 32px 0;
     transition: .8s all ease;
   }
 
+  .reveal.left{
+    position: relative;
+    // transform: translateY(150px);
+    transform: translate3d(-20%, 0, 0);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.right{
+    position: relative;
+    // transform: translateY(150px);
+    transform: translate3d(20%, 0, 0);
+    opacity: 0;
+    transition: 1s all ease;
+  }
 
   .reveal.desktop.active{
     transform: translateY(0px);
@@ -977,6 +996,22 @@ padding: 32px 0;
     
   }
 
+  .reveal.left.active{
+    transform: translateX(0px);
+    opacity: 1;
+    
+  }
+  .reveal.right.active{
+    transform: translateX(0px);
+    opacity: 1;
+    
+  }
+@media(max-width:998px){
+    .reveal.left, .reveal.right{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
 html{
   scroll-behavior: smooth;
