@@ -874,6 +874,7 @@ a.btn-violet:hover {
   #paxApp footer p {
     text-align: center;
     margin-top: 30px;
+    padding: 0 20px;
   }
   #paxApp footer a {
     margin-right: 0px;
